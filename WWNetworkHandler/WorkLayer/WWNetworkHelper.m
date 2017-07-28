@@ -16,7 +16,7 @@
 #define WWLog(...)
 #endif
 
-#define NSStringFormat(format,...) [NSString stringWithFormat:format,##__VA_ARGS__]
+//#define NSStringFormat(format,...) [NSString stringWithFormat:format,##__VA_ARGS__]
 
 @implementation WWNetworkHelper
 
@@ -240,12 +240,12 @@ static AFHTTPSessionManager *_sessionManager;
             NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
             formatter.dateFormat = @"yyyyMMddHHmmss";
             NSString *str = [formatter stringFromDate:[NSDate date]];
-            NSString *imageFileName = NSStringFormat(@"%@%lu.%@",str,(unsigned long)i,imageType?:@"jpg");
+            NSString *imageFileName = [NSString stringWithFormat:@"%@%lu.%@",str,(unsigned long)i,imageType?:@"jpg"];
             
             [formData appendPartWithFileData:imageData
                                         name:name
-                                    fileName:fileNames ? NSStringFormat(@"%@.%@",fileNames[i],imageType?:@"jpg") : imageFileName
-                                    mimeType:NSStringFormat(@"image/%@",imageType ?: @"jpg")];
+                                    fileName:fileNames ? [NSString stringWithFormat:@"%@.%@",fileNames[i],imageType?:@"jpg"] : imageFileName
+                                    mimeType:[NSString stringWithFormat:@"image/%@",imageType ?: @"jpg"]];
         }
         
     } progress:^(NSProgress * _Nonnull uploadProgress) {
