@@ -1,7 +1,6 @@
-网络请求
+#网络请求
 
-对AFNetworking 3.x 与YYCache的二次封装,封装常见的GET、POST、文件上传/下载、网络状态监测的功能、方法接口简洁明了,并结合YYCache实现对网络数据的缓存,简单易用,不用再写FMDB那烦人的SQL语句,一句代码搞定网络数据的请求与缓存. 
-无需设置,无需插件,控制台可直接打印json中文字符,调试更方便
+对AFNetworking 3.x 与YYCache的二次封装,封装常见的GET、POST、文件上传/下载、断点续传、网络状态监测的功能、方法接口简洁明了,并结合YYCache实现对网络数据的缓存,搞定网络数据的请求与缓存. 控制台可直接打印json中文字符,调试更方便
 
 
 ## Requirements 要求
@@ -10,10 +9,12 @@
 
 ## Installation 安装
 ### 1.手动安装:
-`下载DEMO后,将子文件夹WWNetworkHelper拖入到项目中, 导入头文件WWNetworkHelper.h开始使用, 注意: 项目中需要有AFN3.x , YYCache第三方库! 在工程中链接sqlite3依赖库`
+`下载DEMO后,将子文件夹WWNetworkHelper拖入到项目中, 导入头文件WWNetworkHelper.h开始使用
+注意: 项目中需要有AFN3.x , YYCache第三方库! 在工程中链接sqlite3依赖库`
 ### 2.CocoaPods安装:
 first
 `pod 'WWNetworkHelper'
+
 then
 `pod install或pod install --no-repo-update`
 
@@ -242,7 +243,7 @@ NSLog(@"网络缓存大小cache = %.2fMB",totalBytes/1024/1024.f);
 ```
 
 ## 联系方式:
-* Weibo : [@王家伟]http://weibo.com/u/3193598595?source=blog
+* Weibo : [@王家伟](http://weibo.com/u/3193598595?source=blog)
 * Email : 542413041@qq.com
 * QQ : 542413041
 * Blog  : http://blog.sina.com.cn/swift542413041
