@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		433C86501F2AE32100274EF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 433C864F1F2AE32100274EF9 /* AppDelegate.m */; };
 		433C86531F2AE32100274EF9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 433C86521F2AE32100274EF9 /* ViewController.m */; };
-		433C86561F2AE32100274EF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 433C86541F2AE32100274EF9 /* Main.storyboard */; };
 		433C86581F2AE32100274EF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 433C86571F2AE32100274EF9 /* Assets.xcassets */; };
-		433C865B1F2AE32100274EF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 433C86591F2AE32100274EF9 /* LaunchScreen.storyboard */; };
 		433C865E1F2AE32100274EF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 433C865D1F2AE32100274EF9 /* main.m */; };
 		433C869A1F2AE3DE00274EF9 /* WWNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 433C86991F2AE3DE00274EF9 /* WWNetworkHelper.m */; };
 		433C869D1F2AE41400274EF9 /* WWNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 433C869C1F2AE41400274EF9 /* WWNetworkCache.m */; };
@@ -38,6 +36,7 @@
 		433C86EA1F2B10D500274EF9 /* YYDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 433C86D31F2B10D500274EF9 /* YYDiskCache.m */; };
 		433C86EB1F2B10D500274EF9 /* YYKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 433C86D51F2B10D500274EF9 /* YYKVStorage.m */; };
 		433C86EC1F2B10D500274EF9 /* YYMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 433C86D71F2B10D500274EF9 /* YYMemoryCache.m */; };
+		435029851F2B2A5400CC0532 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 435029841F2B2A5400CC0532 /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,9 +45,7 @@
 		433C864F1F2AE32100274EF9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		433C86511F2AE32100274EF9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		433C86521F2AE32100274EF9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		433C86551F2AE32100274EF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		433C86571F2AE32100274EF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		433C865A1F2AE32100274EF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		433C865C1F2AE32100274EF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		433C865D1F2AE32100274EF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		433C86981F2AE3DE00274EF9 /* WWNetworkHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWNetworkHelper.h; sourceTree = "<group>"; };
@@ -102,6 +99,7 @@
 		433C86D51F2B10D500274EF9 /* YYKVStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYKVStorage.m; sourceTree = "<group>"; };
 		433C86D61F2B10D500274EF9 /* YYMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYMemoryCache.h; sourceTree = "<group>"; };
 		433C86D71F2B10D500274EF9 /* YYMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMemoryCache.m; sourceTree = "<group>"; };
+		435029841F2B2A5400CC0532 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				435029851F2B2A5400CC0532 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +121,7 @@
 				433C86941F2AE3A600274EF9 /* WWNetworkHandler */,
 				433C864D1F2AE32100274EF9 /* WWNetworkHelper */,
 				433C864C1F2AE32100274EF9 /* Products */,
+				435029831F2B2A5400CC0532 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,9 +140,7 @@
 				433C864F1F2AE32100274EF9 /* AppDelegate.m */,
 				433C86511F2AE32100274EF9 /* ViewController.h */,
 				433C86521F2AE32100274EF9 /* ViewController.m */,
-				433C86541F2AE32100274EF9 /* Main.storyboard */,
 				433C86571F2AE32100274EF9 /* Assets.xcassets */,
-				433C86591F2AE32100274EF9 /* LaunchScreen.storyboard */,
 				433C865C1F2AE32100274EF9 /* Info.plist */,
 				433C865D1F2AE32100274EF9 /* main.m */,
 			);
@@ -262,6 +260,14 @@
 			path = YYCache;
 			sourceTree = "<group>";
 		};
+		435029831F2B2A5400CC0532 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				435029841F2B2A5400CC0532 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -319,11 +325,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				433C865B1F2AE32100274EF9 /* LaunchScreen.storyboard in Resources */,
 				433C86581F2AE32100274EF9 /* Assets.xcassets in Resources */,
 				433C86DF1F2B10D500274EF9 /* README.md in Resources */,
 				433C86DE1F2B10D500274EF9 /* LICENSE in Resources */,
-				433C86561F2AE32100274EF9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,25 +368,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		433C86541F2AE32100274EF9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				433C86551F2AE32100274EF9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		433C86591F2AE32100274EF9 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				433C865A1F2AE32100274EF9 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		433C865F1F2AE32100274EF9 /* Debug */ = {
