@@ -232,7 +232,7 @@ static AFHTTPSessionManager *_sessionManager;
                                   failure:(WWHttpRequestFailed)failure {
     NSURLSessionTask *sessionTask = [_sessionManager POST:URL parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
         
-        for (int i = 0; i < images.count; i++) {
+        for (NSUInteger i = 0; i < images.count; i++) {
             // 图片经过等比压缩后得到的二进制文件
             NSData *imageData = UIImageJPEGRepresentation(images[i], imageScale ?: 1.f);
             // 默认图片的文件名, 若fileNames为nil就使用
@@ -240,7 +240,7 @@ static AFHTTPSessionManager *_sessionManager;
             NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
             formatter.dateFormat = @"yyyyMMddHHmmss";
             NSString *str = [formatter stringFromDate:[NSDate date]];
-            NSString *imageFileName = NSStringFormat(@"%@%d.%@",str, i,imageType?:@"jpg");
+            NSString *imageFileName = NSStringFormat(@"%@%ld.%@",str, (unsigned long)i,imageType?:@"jpg");
             
             [formData appendPartWithFileData:imageData
                                         name:name
