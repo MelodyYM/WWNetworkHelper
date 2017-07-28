@@ -18,7 +18,8 @@ first
 then
 `pod install或pod install --no-repo-update`
 
-如果发现pod search PPNetworkHelper 不是最新版本，在终端执行pod setup命令更新本地spec镜像缓存
+如果发现pod search WWNetworkHelper 不是最新版本，在终端执行pod setup命令更新本地spec镜像缓存
+
 ### 1. 无自动缓存(GET与POST请求用法相同)
 #### 1.1 无缓存
 ```objc
@@ -34,7 +35,7 @@ then
 [WWNetworkHelper GET:url parameters:nil success:^(id responseObject) {
     //请求成功
         //手动缓存
-    [PPNetworkCache setHttpCache:responseObject URL:url parameters:parameters];
+    [WWNetworkCache setHttpCache:responseObject URL:url parameters:parameters];
     } failure:^(NSError *error) {
     //请求失败
 }];
