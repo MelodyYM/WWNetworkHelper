@@ -240,7 +240,7 @@ static AFHTTPSessionManager *_sessionManager;
             NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
             formatter.dateFormat = @"yyyyMMddHHmmss";
             NSString *str = [formatter stringFromDate:[NSDate date]];
-            NSString *imageFileName = NSStringFormat(@"%@%lu.%@",str,i,imageType?:@"jpg");
+            NSString *imageFileName = NSStringFormat(@"%@%lu.%@",str,(unsigned long)i,imageType?:@"jpg");
             
             [formData appendPartWithFileData:imageData
                                         name:name
