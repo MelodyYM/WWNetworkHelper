@@ -2,7 +2,7 @@
 
 # 网络请求
 
-对AFNetworking 3.x 与YYCache的二次封装,封装常见的GET、POST、文件上传/下载、断点续传、网络状态监测的功能、方法接口简洁明了,并结合YYCache实现对网络数据的缓存,搞定网络数据的请求与缓存. 控制台可直接打印json中文字符,调试更方便
+内部使用网络处理类，更加高效，更加面向对象的网络处理。请求、上传、下载、断点续传等。
 
 
 ## Requirements 要求
@@ -237,8 +237,7 @@ NSLog(@"网络缓存大小cache = %.2fMB",totalBytes/1024/1024.f);
 + (void)setSecurityPolicyWithCerPath:(NSString *)cerPath validatesDomainName:(BOOL)validatesDomainName;
 ```
 
-===
-## CocoaPods更新日志
+## 更新日志
 
 ```
 • 2017.07.31(tag:0.0.2): 版本修改;
